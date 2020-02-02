@@ -1,0 +1,34 @@
+---
+title: "Week7"
+author: "Srikar Polasanapalli"
+date: "September 22, 2019"
+output: word_document
+---
+
+```{r}
+
+
+library(PerformanceAnalytics)
+library(xts)
+library(lubridate)
+# load data and create an xts dataset
+fund<-read.csv("contrafund.csv")
+fund$Date<-mdy(fund$Date)
+fund2<-fund[order(fund$Date),]
+#create an xts dataset
+All.dat<-xts(fund2[,-1],order.by=fund2[,1],)
+
+Return.cumulative(All.dat, geometric =TRUE)
+chart.CumReturns(All.dat, wealth.index =FALSE, geometric = TRUE)
+
+SharpeRatio(All.dat$ContraRet,All.dat$Risk.Free)
+TreynorRatio(All.dat$ContraRet,All.dat$Market.Return,All.dat$Risk.Free)
+
+All.dat<-transform(All.dat,MktExcess=Market.Return-Risk.Free,FundExcess=ContraRet-Risk.Free)
+
+Alpha=lm(FundExcess~MktExcess,data=All.dat)
+summary(Alpha)
+
+
+```
+
