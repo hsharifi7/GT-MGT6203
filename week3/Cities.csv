@@ -1,0 +1,101 @@
+Rank,CityState,Population2010,Population2012,Growth
+1,New York City; New York,8175133,8336697,161564
+2,Los Angeles; California,3792621,3857799,65178
+3,Chicago; Illinois,2695598,2714856,19258
+4,Houston; Texas,2099451,2160821,61370
+5,Philadelphia; Pennsylvania,1526006,1547607,21601
+6,Phoenix; Arizona,1445632,1488750,43118
+7,San Antonio; Texas,1327407,1382951,55544
+8,San Diego; California,1307402,1338348,30946
+9,Dallas; Texas,1197816,1241162,43346
+10,San Jose; California,945942,982765,36823
+11,Austin; Texas,790390,842592,52202
+12,Jacksonville; Florida,821784,836507,14723
+13,Indianapolis; Indiana,820445,834852,14407
+14,San Francisco; California,805235,825863,20628
+15,Columbus; Ohio,787033,809798,22765
+16,Fort Worth; Texas,741206,777992,36786
+17,Charlotte; North Carolina,731424,775202,43778
+18,Detroit; Michigan,713777,701475,-12302
+19,El Paso; Texas,649121,672538,23417
+20,Memphis; Tennessee,646889,655155,8266
+21,Boston; Massachusetts,617594,636479,18885
+22,Seattle; Washington,608660,634535,25875
+23,Denver; Colorado,600158,634265,34107
+24,Washington; DC,601723,632323,30600
+25,Nashville-Davidson; Tennessee,601222,624496,23274
+26,Baltimore; Maryland,620961,621342,381
+27,Louisville/Jefferson; Kentucky,597337,605110,7773
+28,Portland; Oregon,583776,603106,19330
+29,Oklahoma ; Oklahoma,579999,599199,19200
+30,Milwaukee; Wisconsin,594833,598916,4083
+31,Las Vegas; Nevada,583756,596424,12668
+32,Albuquerque; New Mexico,545852,555417,9565
+33,Tucson; Arizona,520116,524295,4179
+34,Fresno; California,494665,505882,11217
+35,Sacramento; California,466488,475516,9028
+36,Long Beach; California,462257,467892,5635
+37,Kansas ; Missouri,459787,464310,4523
+38,Mesa; Arizona,439041,452084,13043
+39,Virginia Beach; Virginia,437994,447021,9027
+40,Atlanta; Georgia,420003,443775,23772
+41,Colorado Springs; Colorado,416427,431834,15407
+42,Raleigh; North Carolina,403892,423179,19287
+43,Omaha; Nebraska,408958,421570,12612
+44,Miami; Florida,399457,413892,14435
+45,Oakland; California,390724,400740,10016
+46,Tulsa; Oklahoma,391906,393987,2081
+47,Minneapolis; Minnesota,382578,392880,10302
+48,Cleveland; Ohio,396815,390928,-5887
+49,Wichita; Kansas,382368,385577,3209
+50,Arlington; Texas,365438,375600,10162
+51,New Orleans; Louisiana,343829,369250,25421
+52,Bakersfield; California,347483,358597,11114
+53,Tampa; Florida,335709,347645,11936
+54,Honolulu; Hawaii,337256,345610,8354
+55,Anaheim; California,336265,343248,6983
+56,Aurora; Colorado,325078,339030,13952
+57,Santa Ana; California,324528,330920,6392
+58,St. Louis; Missouri,319294,318172,-1122
+59,Riverside; California,303871,313673,9802
+60,Corpus Christi; Texas,305215,312195,6980
+61,Pittsburgh; Pennsylvania,305704,306211,507
+62,Lexington-Fayette; Kentucky,295803,305489,9686
+63,"Anchorage municipality, Alaska",291826,298610,6784
+64,Stockton; California,291707,297984,6277
+65,Cincinnati; Ohio,296943,296550,-393
+66,St. Paul; Minnesota,285068,290770,5702
+67,Toledo; Ohio,287208,284012,-3196
+68,Newark; New Jersey,277140,277727,587
+69,Greensboro; North Carolina,269666,277080,7414
+70,Plano; Texas,259841,272068,12227
+71,Henderson; Nevada,257729,265679,7950
+72,Lincoln; Nebraska,258379,265404,7025
+73,Buffalo; New York,261310,259384,-1926
+74,Fort Wayne; Indiana,253691,254555,864
+75,Jersey ; New Jersey,247597,254441,6844
+76,Chula Vista; California,243916,252422,8506
+77,Orlando; Florida,238300,249562,11262
+78,St. Petersburg; Florida,244769,246541,1772
+79,Norfolk; Virginia,242803,245782,2979
+80,Chandler; Arizona,236123,245628,9505
+81,Laredo; Texas,236091,244731,8640
+82,Madison; Wisconsin,233209,240323,7114
+83,Durham; North Carolina,228330,239358,11028
+84,Lubbock; Texas,229573,236065,6492
+85,Winston-Salem; North Carolina,229617,234349,4732
+86,Garland; Texas,226876,233564,6688
+87,Glendale; Arizona,226721,232143,5422
+88,Hialeah; Florida,224669,231941,7272
+89,Reno; Nevada,225221,231027,5806
+90,Baton Rouge; Louisiana,229493,230058,565
+91,Irvine; California,212375,229985,17610
+92,Chesapeake; Virginia,222209,228417,6208
+93,Irving; Texas,216290,225427,9137
+94,Scottsdale; Arizona,217385,223514,6129
+95,North Las Vegas; Nevada,216961,223491,6530
+96,Fremont; California,214089,221986,7897
+97,"Gilbert town, Arizona",208453,221140,12687
+98,San Bernardino; California,209924,213295,3371
+99,Boise; Idaho,205671,212303,6632
+100,Birmingham; Alabama,212237,212038,-199

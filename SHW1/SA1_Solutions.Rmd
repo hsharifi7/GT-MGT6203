@@ -1,0 +1,108 @@
+---
+title: "Self-Assessment #1 - Solutions"
+author: "MGT 6203 - Data Analytics in Business"
+date: "Georgia Tech, Fall 2019"
+output: word_document
+---
+
+Install and load the dataset named Carseats (in the ISLR package) into R.
+
+```{r}
+install.packages("ISLR")
+library("ISLR")
+data("Carseats")
+
+```
+
+
+
+```{r }
+
+
+Model1 = lm(Carseats$Sales~Carseats$Price)
+summary(Model1)
+
+print("Question1")
+summary(Model1)$adj.r.squared
+
+print("Question2")
+
+summary(Model1)$coefficients[2]
+
+print("Question3")
+
+summary(Model1)$coefficients[6]
+
+print("Question4")
+print("Since the p value is less that 0.05, the estimated Coefficient is statistically different from 0")
+
+
+
+```
+
+
+
+```{r}
+
+Carseats$Bad_Shelf<-ifelse(Carseats$ShelveLoc=="Bad",1,0)
+Carseats$Good_Shelf<-ifelse(Carseats$ShelveLoc=="Good",1,0)
+
+Model2<-lm(Carseats$Sales~Carseats$Price+Carseats$Bad_Shelf+Carseats$Good_Shelf)
+summary(Model2)
+
+print("Question5")
+summary(Model2)$coefficients[3]
+
+print("Question6")
+summary(Model2)$coefficients[1]
+
+print("Question7")
+summary(Model2)$coefficients[1]+summary(Model2)$coefficients[3]
+
+print("Question8")
+print("The coefficient of Good_Shelf captures the difference in sales of carseats if they are located in the Good shelf location compared to that of carseats located in the Medium shelf location.")
+
+
+```
+
+
+
+```{r}
+
+#setwd("~/Desktop/PriceDemand.csv")  ##change path to where you have stored PriceDemand.csv
+PriceDemand = read.csv("PriceDemand.csv", header = TRUE)
+Model3<-lm(PriceDemand$Qty~PriceDemand$Price)
+summary(Model3)
+
+print("Question9")
+print("One dollar increase in price decreases demand by 394 units")
+
+
+
+PriceDemand$Price_ln<-log(PriceDemand$Price)
+Model4<-lm(PriceDemand$Qty~PriceDemand$Price_ln)
+summary(Model4)
+
+#For small p, approximately log([100 + p]/100) ≈ p/100. For p = 1, this means that b1/100 can be interpreted approximately as the expected increase in Y from a 1% increase in X
+
+print("Question10")
+print("When price increases by 1%, quantity decreases by 19.94 units")
+
+
+PriceDemand$Qty_ln<-log(PriceDemand$Qty)
+Model5<-lm(PriceDemand$Qty_ln~PriceDemand$Price)
+summary(Model5)
+
+#Interpretation of the estimated coefficient b1 is that a one-unit increase in X will produce an expected increase in log Y of b1 units. In terms of Y itself, this means that the expected value of Y is multiplied by e^b1.
+#For small values of b1, approximately e^b1 ≈ 1+b1. We can use this for the following approximation for a quick interpretation of the coefficients: 100*b1 is the expected percentage change in Y for a unit increase in X.
+print("Question11")
+print("When price increases by $0.1, quantity decreases (on average) by 2.35%")
+
+
+Model6<-lm(PriceDemand$Qty_ln~PriceDemand$Price_ln)
+summary(Model6)
+#Increasing log(Price) by 0.01 changes log(Qty) by b1 * 0.01 units which implies increasing Price by 1% changes Qty by b1 %
+print("Question12")
+print("When price increases by 1%, quantity decreases (on average) by 1.18%")
+
+```
